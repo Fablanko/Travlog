@@ -1,0 +1,80 @@
+.subscribe {
+  padding: 0 0 128px;
+
+  &-wrap {
+    position: relative;
+    padding: 128px 64px;
+    border-radius: 32px;
+    background: rgba(250, 205, 73, 0.08);
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 184px;
+      height: 177px;
+      display: block;
+      content: '';
+      background: url('../../img/bg-elements/subscribe-bg.svg') no-repeat
+        transparent;
+      transform: translate(-43px, -59px);
+    }
+  }
+
+  &-heading {
+    text-align: center;
+  }
+
+  .section-title {
+    margin-bottom: 32px;
+  }
+
+  .title {
+    margin-bottom: 64px;
+    font-size: 56px;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    gap: 0 64px;
+  }
+
+  &__inputbox {
+    flex-grow: 1;
+    height: 96px;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    gap: 0 16px;
+    border-radius: 32px;
+    border: none;
+    background: $white;
+
+    &::before {
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: url('../../img/icons/message.svg') no-repeat transparent;
+      content: '';
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 32px 0;
+    border: none;
+    background: $white;
+    outline: none;
+    font-family: $SecondaryTxt;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 120%;
+    color: rgba($text, 0.75);
+  }
+
+  .btn {
+    width: 235px;
+    height: 96px;
+  }
+}

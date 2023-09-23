@@ -30,33 +30,33 @@
   font-display: swap;
 }
 
-*,
-*::after,
-*::before {
-  margin: 0;
+body {
   padding: 0;
-  box-sizing: border-box;
 }
 
-html {
-  width: 100vw;
+.main {
+  position: relative;
+  z-index: 1;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-family: 'Inter', sans-serif;
-}
-
-body {
-  position: relative;
-  padding: 0;
   background-color: $white;
   color: $text;
-}
+  font-family: $PrimaryTxt;
 
-img {
-  vertical-align: middle;
-}
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-::selection {
-  background-color: $primary;
-  color: $white;
+  img {
+    vertical-align: middle;
+  }
+
+  ::selection {
+    background-color: $primary;
+    color: $white;
+  }
 }

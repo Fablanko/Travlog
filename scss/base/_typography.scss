@@ -1,15 +1,17 @@
-body {
-  font-size: 18px;
-}
+.main {
+  body {
+    font-size: 18px;
+  }
 
-a {
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    outline: none;
+  a {
     text-decoration: none;
-    color: inherit;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      text-decoration: none;
+      color: inherit;
+    }
   }
 }
 
