@@ -49,9 +49,7 @@ body {
   text-decoration: none;
 }
 .main a:hover, .main a:focus {
-  outline: none;
   text-decoration: none;
-  color: inherit;
 }
 
 b {
