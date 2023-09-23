@@ -1,0 +1,17 @@
+@mixin section-title {
+  font-size: 44px;
+  line-height: 120%;
+  font-weight: 700;
+  color: $text;
+  font-family: $SecondaryTxt;
+}
+
+@mixin section-subtitle {
+  font-size: 23px;
+  line-height: 120%;
+  font-weight: 300;
+  color: $secondary;
+  font-family: $SecondaryTxt;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+}

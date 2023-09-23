@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0 16px;
+
+  &-text {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 900;
+    font-family: $SecondaryTxt;
+    color: $text;
+    transition: 0.3s color;
+
+    &:hover,
+    &:focus {
+      color: $primary;
+    }
+  }
+}

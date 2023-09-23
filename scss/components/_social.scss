@@ -1,0 +1,23 @@
+.social {
+  display: flex;
+  align-items: center;
+  gap: 0 32px;
+
+  &__item {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      fill: $primary;
+      transition: 0.3s fill;
+    }
+
+    &:hover {
+      svg {
+        fill: $secondary;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.brands {
+  position: relative;
+  padding: 64px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0 80px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65px;
+    height: 170px;
+    transform: translate(-127px, -55px);
+    display: block;
+    background: url('./../../img/bg-elements/partners-bg.svg') no-repeat
+      transparent;
+    content: '';
+  }
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    display: block;
+    border-radius: 500px;
+    opacity: 0.5;
+    background: #facd49;
+    filter: blur(250px);
+    content: '';
+    transform: translate(593px, 233px);
+  }
+}

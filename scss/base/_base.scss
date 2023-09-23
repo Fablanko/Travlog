@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'CircularStd';
+  src: url('../../fonts/CircularStd/CircularStd-Bold.eot');
+  src: url('../../fonts/CircularStd/CircularStd-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/CircularStd/CircularStd-Bold.otf') format('otf'),
+    url('../../fonts/CircularStd/CircularStd-Bold.svg#CircularStd')
+      format('svg'),
+    url('../../fonts/CircularStd/CircularStd-Bold.ttf') format('truetype'),
+    url('../../fonts/CircularStd/CircularStd-Bold.woff') format('woff'),
+    url('../../fonts/CircularStd/CircularStd-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url('../../fonts/CircularStd/CircularStd-Black.eot');
+  src: url('../../fonts/CircularStd/CircularStd-Black.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/CircularStd/CircularStd-Black.otf') format('otf'),
+    url('../../fonts/CircularStd/CircularStd-Black.svg#CircularStd')
+      format('svg'),
+    url('../../fonts/CircularStd/CircularStd-Black.ttf') format('truetype'),
+    url('../../fonts/CircularStd/CircularStd-Black.woff') format('woff'),
+    url('../../fonts/CircularStd/CircularStd-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  position: relative;
+  padding: 0;
+  background-color: $white;
+  color: $text;
+}
+
+img {
+  vertical-align: middle;
+}
+
+::selection {
+  background-color: $primary;
+  color: $white;
+}

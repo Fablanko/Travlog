@@ -1,0 +1,20 @@
+.topnav {
+  display: flex;
+  align-items: center;
+  gap: 0 64px;
+
+  &__link {
+    color: rgba(25, 24, 37, 0.5);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    transition: 0.3s color;
+    font-family: $SecondaryTxt;
+
+    &:hover,
+    &:focus,
+    &.active {
+      color: #222831;
+    }
+  }
+}

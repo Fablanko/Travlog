@@ -1,0 +1,24 @@
+.header {
+  padding: 32px;
+
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-btn-box {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+  }
+
+  .btn {
+    &:not(.btn--primary) {
+      &:hover {
+        background-color: $primary;
+        color: $white;
+      }
+    }
+  }
+}
