@@ -793,6 +793,127 @@ button {
   fill: #ff5722;
 }
 
+.features {
+  padding-bottom: 72px;
+}
+.features-wrap {
+  position: relative;
+  display: grid;
+  grid-template-columns: 540px 1fr;
+  gap: 0 42px;
+}
+.features-wrap:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 448px;
+  height: 272px;
+  background: url("../img/bg-elements/features-bg.svg") no-repeat;
+  content: "";
+  transform: translateX(150px);
+}
+.features-details {
+  margin: 32px 0 64px;
+  color: rgba(25, 24, 37, 0.5);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+}
+.features-item {
+  padding: 32px;
+  border-radius: 32px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 0 32px;
+}
+.features-item:nth-child(2n) {
+  border: 1px solid rgba(25, 24, 37, 0.1);
+}
+.features-item:first-child .features__icon {
+  background-color: #ff5722;
+}
+.features-item:nth-child(2) .features__icon {
+  background-color: #facd49;
+}
+.features-item:nth-child(3) .features__icon {
+  background-color: #f85e9f;
+}
+.features__icon {
+  grid-column: 1/1;
+  grid-row: 1/3;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32px;
+}
+.features__title {
+  margin-bottom: 8px;
+  align-self: flex-end;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  color: #191825;
+  font-family: "CircularStd", sans-serif;
+}
+.features__desc {
+  color: rgba(25, 24, 37, 0.5);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.features-gallery {
+  padding-top: 73px;
+  position: relative;
+}
+.features__img {
+  border-radius: 500px;
+  overflow: hidden;
+}
+.features__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.features__img:first-child {
+  width: 443px;
+  height: 665px;
+}
+.features__img:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 351px;
+  height: 496px;
+  border: 24px solid #fff;
+  transform: translate(24px, 85px);
+}
+.features .btn--features {
+  position: absolute;
+  top: 160px;
+  right: 0;
+  height: 72px;
+  width: 307px;
+  font-size: 23px;
+  line-height: 120%;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.features .btn--features svg {
+  fill: #ff5722;
+  transition: fill 0.3s;
+}
+.features .btn--features:hover {
+  background-color: #ff5722;
+  color: #fff;
+}
+.features .btn--features:hover svg {
+  fill: #fff;
+}
+
 .testimonials {
   position: relative;
   overflow-x: clip;
@@ -813,7 +934,7 @@ button {
   background: url("../img/bg-elements/testimonials_bg.svg") no-repeat;
   content: "";
   opacity: 0.1;
-  transform: translate(-796px, -271px) rotate(-4deg);
+  transform: translate(-726px, -281px);
 }
 .testimonials-content {
   margin-top: 64px;
