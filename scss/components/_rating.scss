@@ -1,0 +1,14 @@
+.rating {
+  display: grid;
+  grid-template-columns: repeat(5, 32px);
+  gap: 0 16px;
+  margin: 0 auto;
+  width: max-content;
+
+  &__star {
+    width: 32px;
+    height: 32px;
+    display: block;
+    background: url('../img/star-large.svg') no-repeat;
+  }
+}

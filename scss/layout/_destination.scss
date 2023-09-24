@@ -46,8 +46,8 @@
       width: 107px;
       height: 107px;
       display: block;
-      background: url('../img/bg-elements/destination-bg.svg') no-repeat
-        center transparent;
+      background: url('../img/bg-elements/destination-bg.svg') no-repeat center
+        transparent;
       content: '';
       transform: translate(130px, -35px);
     }
@@ -57,39 +57,6 @@
     display: flex;
     align-items: center;
     gap: 0 32px;
-  }
-
-  &-btn {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 1px solid rgba($black, 0.1);
-    background-color: transparent;
-    transition: background 0.3s;
-    cursor: pointer;
-
-    &:not(.swiper-button-disabled):hover {
-      background-color: $primary;
-
-      svg {
-        fill: $white;
-      }
-    }
-
-    &--prev {
-      transform: rotate(180deg);
-    }
-  }
-
-  .swiper-button-disabled {
-    cursor: default;
-
-    svg {
-      opacity: 0.3;
-    }
   }
 
   &__desc {

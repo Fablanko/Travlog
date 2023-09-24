@@ -1,0 +1,42 @@
+.control {
+  &-btn {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba($black, 0.1);
+    background-color: $white;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:not(.swiper-button-disabled):hover {
+      background-color: $primary;
+      filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08))
+        drop-shadow(0px 7px 16px rgba(0, 0, 0, 0.07))
+        drop-shadow(0px 29px 29px rgba(0, 0, 0, 0.06))
+        drop-shadow(0px 65px 39px rgba(0, 0, 0, 0.04))
+        drop-shadow(0px 116px 46px rgba(0, 0, 0, 0.01))
+        drop-shadow(0px 181px 51px rgba(0, 0, 0, 0));
+
+      svg {
+        fill: $white;
+      }
+    }
+
+    &--prev {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.swiper-button-disabled {
+  cursor: default;
+
+  svg {
+    opacity: 0.3;
+  }
+}

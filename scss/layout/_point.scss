@@ -60,7 +60,7 @@
       position: absolute;
       z-index: 1;
       top: 105px;
-      left: 72px;
+      left: 0;
       width: 40px;
       height: 40px;
       background: linear-gradient(281deg, $primary 7.11%, $secondary 93.54%);
@@ -149,6 +149,7 @@
   .btn {
     &--discount {
       position: absolute;
+      z-index: 1;
       top: 131px;
       right: 0;
       width: 302px;
